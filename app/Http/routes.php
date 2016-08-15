@@ -11,11 +11,6 @@
 |
 */
 
-<<<<<<< 2d837a59765fa0e0f9be2c2e036190c768bb2b63
-Route::get('/', function () {
-    return view('welcome');
-});
-=======
 Route::group(['Middleware' => ['web']], function () {
 
     Route::get('/', function () {
@@ -25,8 +20,7 @@ Route::group(['Middleware' => ['web']], function () {
     Route::get('/mysql', 'IndexController@mysql');
 
     Route::get('admin/login', 'Admin\LoginController@login');
-
+    Route::get('admin/code', 'Admin\LoginController@code');
+    Route::get('admin/getcode', 'Admin\LoginController@getcode');
 });
 
-
->>>>>>> login页面提交
