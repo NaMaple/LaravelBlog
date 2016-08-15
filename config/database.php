@@ -60,11 +60,7 @@ return [
             'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-<<<<<<< 2d837a59765fa0e0f9be2c2e036190c768bb2b63
-            'prefix'    => '',
-=======
             'prefix'    => env('DB_PREFIX', ''),
->>>>>>> login页面提交
             'strict'    => false,
         ],
 
